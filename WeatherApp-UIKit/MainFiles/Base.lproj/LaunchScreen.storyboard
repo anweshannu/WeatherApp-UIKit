@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made with ❤️ by Anwesh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQN-nR-dW6">
+                                <rect key="frame" x="100.00000000000001" y="797" width="193.33333333333337" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="WeatherImage" translatesAutoresizingMaskIntoConstraints="NO" id="6Eq-U5-CuF">
+                                <rect key="frame" x="18" y="321" width="357" height="235"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxR-RC-Tlb">
+                                <rect key="frame" x="117.66666666666669" y="567" width="158" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Color1"/>
+                        <constraints>
+                            <constraint firstItem="aQN-nR-dW6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1Rq-0D-Wlr"/>
+                            <constraint firstItem="UxR-RC-Tlb" firstAttribute="firstBaseline" secondItem="6Eq-U5-CuF" secondAttribute="baseline" constant="37.666666666666664" symbolType="layoutAnchor" id="I1H-Bg-4Jr"/>
+                            <constraint firstItem="6Eq-U5-CuF" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="JAI-mz-Lm1"/>
+                            <constraint firstItem="6Eq-U5-CuF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Wty-Zt-sHR"/>
+                            <constraint firstItem="UxR-RC-Tlb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e1i-Bv-bDu"/>
+                            <constraint firstItem="6Eq-U5-CuF" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.275822" id="k3T-mP-P2M"/>
+                            <constraint firstItem="6Eq-U5-CuF" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.908397" id="lii-Sa-H9O"/>
+                            <constraint firstItem="aQN-nR-dW6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mAR-NQ-7eF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WeatherImage" width="960" height="514"/>
+        <namedColor name="Color1">
+            <color red="0.071999996900558472" green="0.090000003576278687" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
