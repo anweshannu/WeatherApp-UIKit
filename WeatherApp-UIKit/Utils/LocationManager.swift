@@ -15,6 +15,7 @@ class LocationManager: NSObject{
     
     func authorizationStatus() -> CLAuthorizationStatus {
         print("Called:- \(#function)\n")
+        manager.requestWhenInUseAuthorization()
         var authorizationStatus: CLAuthorizationStatus
         
         if #available(iOS 14, *) {
